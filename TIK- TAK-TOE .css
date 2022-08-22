@@ -1,0 +1,157 @@
+*::after,*::before {
+    box-sizing: border-box;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin:0;
+    background-image: linear-gradient(to right, #00AAFF, #00ff6c);
+}
+
+.all {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    width: 300px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    
+    margin: 4rem 3rem 1rem;
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    font-size: 3rem;
+    background: rgba(225, 225, 225, .75);
+    position: relative;
+    
+}
+
+.calculator-grid > button:hover {
+    background: #fff;
+}
+
+button > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.p--2 {
+    position: absolute;
+    top: -1.5rem;
+    left: 2.3rem;
+    color: green;
+}
+
+.p--1 {
+    position: absolute;
+    top: -1.5rem;
+    left: 2.4rem;
+    color: red;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #111;
+
+}
+.players {
+    display: flex;
+    width: 18.5rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-right: -8rem;
+    
+ 
+    
+}
+.player-1 {
+   display: flex;
+   background: #00AAFF; 
+   justify-content: space-around;
+   width: 9rem;
+   align-items: center;
+   height: 3rem;
+   border-bottom: 1px solid white;
+
+   
+}
+
+.player-1 p {
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+span {
+    display: flex;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: brown;
+    font-family: Cambria, Cochin, Georgia,'Times New Roman', serif;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    border-bottom: 1px solid white;
+
+}
+
+.win {
+    background: #00AAFF;
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+    height: 3rem;
+    align-items: center;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+    
+}
+
+.refresh {
+    height: 10rem;
+    max-width: 7rem;
+    border-radius: 6px;
+    background: white;
+    color: tomato;
+    border: 2px solid #00AAFF;
+    text-transform: uppercase;
+    margin-left: -5rem;
+   
+}
+
+.refresh:hover {
+    transform: translateY(-2px); 
+}
+
+.refresh p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    fill: blue;
+}
